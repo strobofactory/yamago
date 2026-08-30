@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yamago サポート — 登山GPS・オフライン地図</title>
+<meta name="description" content="yamago（登山GPS・オフライン地図アプリ）のサポートページ。よくある質問とお問い合わせ先のご案内。">
+<style>
+  :root {
+    --forest:    #1A2B1B;
+    --moss:      #3D5A3E;
+    --moss-soft: #5A7D5B;
+    --parchment: #F2EDE6;
+    --ink:       #2C2820;
+    --sky:       #7FB4D9;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", sans-serif;
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.85;
+    font-size: 15px;
+  }
+  header {
+    background: var(--forest);
+    color: #fff;
+    padding: 44px 24px 40px;
+  }
+  .wrap { max-width: 620px; margin: 0 auto; }
+  .mark {
+    width: 72px; height: 72px;
+    display: block; margin: 0 0 14px -6px;
+  }
+  h1 {
+    font-size: 30px; font-weight: 300; letter-spacing: 0.04em;
+  }
+  header p.tagline {
+    margin-top: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.72);
+  }
+  header p.sub {
+    margin-top: 18px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+  }
+  main { padding: 36px 24px 24px; }
+  h2 {
+    font-size: 17px; font-weight: 700;
+    color: var(--moss);
+    margin: 36px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed rgba(61,90,62,0.35);
+  }
+  h2:first-child { margin-top: 0; }
+  details {
+    background: #fff;
+    border: 1px solid rgba(61,90,62,0.18);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  summary {
+    cursor: pointer;
+    padding: 13px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    list-style: none;
+    position: relative;
+    padding-right: 38px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "＋";
+    position: absolute; right: 15px; top: 12px;
+    color: var(--moss-soft); font-weight: 400;
+  }
+  details[open] summary::after { content: "－"; }
+  details .a {
+    padding: 0 16px 14px;
+    font-size: 14px;
+    color: #4A443C;
+  }
+  details .a p + p { margin-top: 8px; }
+  .contact {
+    background: #fff;
+    border: 1px solid rgba(61,90,62,0.18);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .contact a.mail {
+    display: inline-block;
+    margin: 8px 0 4px;
+    padding: 10px 34px;
+    background: var(--moss);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .contact a.mail:hover, .contact a.mail:focus { background: var(--moss-soft); }
+  .contact p.note { font-size: 12.5px; color: #6B6259; margin-top: 6px; }
+  ul.links { list-style: none; }
+  ul.links li { margin-bottom: 6px; }
+  ul.links a { color: var(--moss); font-weight: 600; text-decoration: underline; }
+  footer {
+    padding: 28px 24px 44px;
+    font-size: 12px;
+    color: #7A7268;
+  }
+  footer .en { margin-top: 10px; }
+  a:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="mark" src="yamago-logo.png" width="72" height="72"
+         alt="yamago" decoding="async">
+    <h1>yamago サポート</h1>
+    <p class="tagline">登山GPS・オフライン地図 — Apple Watch で山を歩く</p>
+    <p class="sub">アプリの使い方のご質問・不具合のご報告は、このページのお問い合わせ先で承っています。</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <h2>お問い合わせ</h2>
+    <div class="contact">
+      <p>ご質問・不具合報告・ご要望は、メールでご連絡ください。通常2〜3営業日以内に返信いたします。</p>
+      <a class="mail" href="mailto:info@hapiveri.com?subject=%5Byamago%5D%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メール</a>
+      <p class="note">不具合のご報告の際は、お使いの iPhone / Apple Watch の機種と iOS のバージョン、発生した状況をあわせてお知らせいただけると解決が早くなります。</p>
+    </div>
+
+    <h2>よくある質問</h2>
+
+    <details>
+      <summary>記録の途中で軌跡が途切れてしまいます</summary>
+      <div class="a">
+        <p>位置情報の権限が「使用中のみ許可」になっていると、画面を消したときに GPS 記録が止まります。iOS の 設定 → yamago → 位置情報 で<strong>「常に」</strong>を選択してください。</p>
+        <p>登山中は画面を消していても、この設定によりバックグラウンドで軌跡の記録が続きます。位置情報が端末の外へ送信されることはありません。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Apple Watch に心拍数が表示されません</summary>
+      <div class="a">
+        <p>Watch 側の yamago が起動しているかご確認ください。iPhone で記録を開始すると Watch 版が自動起動しますが、起動しない場合は Watch で手動で yamago を開いてください。</p>
+        <p>また、iPhone の yamago 設定 → ヘルスケア連携 で連携がオンになっているか、iOS の設定 → ヘルスケア → データアクセスとデバイス → yamago で許可されているかもあわせてご確認ください。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>ヘルスケア連携の画面で接続が終わりません</summary>
+      <div class="a">
+        <p>接続に15秒以上かかる場合は自動的に中断され、iOS 設定への案内が表示されます。iOS の 設定 → ヘルスケア → データアクセスとデバイス → yamago から直接許可することもできます。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>電波の届かない山でも地図は見られますか？</summary>
+      <div class="a">
+        <p>はい。事前に地形図をダウンロードしておけば、圏外でも現在地と地図を表示できます（オフライン地図は PRO 機能です）。ダウンロードは電波のある場所・Wi-Fi 環境で済ませておくことをおすすめします。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>PRO の解約・購入の復元はどこからできますか？</summary>
+      <div class="a">
+        <p>解約は iPhone の 設定 → 一番上の Apple Account → サブスクリプション から行えます。解約後も、支払い済みの期間の終わりまで PRO 機能を利用できます。</p>
+        <p>機種変更などで購入を復元する場合は、同じ Apple Account でサインインのうえ、アプリ内の PRO 画面から「購入を復元」を実行してください。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>記録データの保存先と削除方法を教えてください</summary>
+      <div class="a">
+        <p>登山記録はお使いの端末と、ご本人の iCloud（プライベートデータベース）にのみ保存されます。開発者や第三者が内容にアクセスすることはありません。</p>
+        <p>アカウントと記録をすべて削除する場合は、アプリ内の 設定 → アカウントを削除 から実行できます。</p>
+      </div>
+    </details>
+
+    <h2>規約・ポリシー</h2>
+    <ul class="links">
+      <li><a href="https://strobofactory.github.io/yamago/privacy-policy.html">プライバシーポリシー</a></li>
+      <li><a href="https://strobofactory.github.io/yamago/terms.html">利用規約</a></li>
+    </ul>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>yamago は HAPIVERI Healthcare.ai が開発・運営しています。</p>
+    <p>気象データは Apple Weather を使用しています。<a href="https://weatherkit.apple.com/legal-attribution.html" style="color:#7A7268">データソースについて</a></p>
+    <p class="en">Support for the yamago app (Hiking GPS &amp; Offline Maps). For questions or bug reports, email <a href="mailto:info@hapiveri.com" style="color:#7A7268">info@hapiveri.com</a> — we reply within two to three business days.</p>
+  </div>
+</footer>
+
+</body>
+</html>
